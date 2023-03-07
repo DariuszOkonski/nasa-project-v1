@@ -1,0 +1,27 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx nodemon src/server.js --prefix server",
+    "client": "npm run start --prefix client",
+    "watch": "npm run server & npm run client",
+    "watch:dev": "npx concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DariuszOkonski/nasa-project-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DariuszOkonski/nasa-project-v1/issues"
+  },
+  "homepage": "https://github.com/DariuszOkonski/nasa-project-v1#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
