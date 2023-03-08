@@ -8,7 +8,8 @@
     "client": "npm run start --prefix client",
     "watch": "npm run server & npm run client",
     "watch:dev": "npx concurrently \"npm run server\" \"npm run client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build --prefix client && npm start --prefix server"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/DariuszOkonski/nasa-project-v1#readme",
   "devDependencies": {
     "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "morgan": "^1.10.0"
   }
 }
